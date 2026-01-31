@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Riverland International School</title>
-<link rel="manifest" href="manifest.json" />
-<meta name="theme-color" content="#004e92" />
-<link rel="apple-touch-icon" href="icon-ris-192.png" />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#004e92" />
+    <link rel="apple-touch-icon" href="icon-ris-192.png" />
 
     <!-- Fonts -->
     <link
@@ -172,9 +172,16 @@
           ពិនិត្យមើលអ្នកបង់លុយ
         </a>
       </div>
+      <script>
+        if ("serviceWorker" in navigator) {
+          navigator.serviceWorker
+            .register("/sw.js")
+            .then(() => console.log("✅ SW Registered"))
+            .catch((err) => console.log("❌ SW Error", err));
+        }
+      </script>
 
       <div class="credit">Created by Srean Phirom</div>
     </div>
   </body>
 </html>
-
