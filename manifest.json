@@ -9,7 +9,7 @@
     {
       "src": "Icon RIS.PNG",
       "sizes": "192x192",
-      "type": "imageI/png"
+      "type": "image/png"
     },
     {
       "src": "Icon RIS.PNG",
@@ -18,3 +18,4 @@
     }
   ]
 }
+
